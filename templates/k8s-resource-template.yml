@@ -1,0 +1,8 @@
+resources:
+  - nginx-ingress-controller.yaml
+  - cluster-issuer.yaml
+  - secret-store.yaml
+  - elab-{{ tag_name }}-kustomization.yaml
+  - elab-donor-hq.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization

@@ -34,4 +34,4 @@ jobs:
           template: 'templates/k8s-resource-template.yml'
           file: 'tmp_outputs/kustomize.yml'
           variables: "tag_name=${{ inputs.tags }}"
-      - run: cat outputs/first-template-new.md
+      - run: ls -la
